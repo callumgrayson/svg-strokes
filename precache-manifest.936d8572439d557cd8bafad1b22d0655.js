@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "eb48d8a94a9a9dc758b203ac3621f118",
+    "revision": "c6d1258a9c3f35df854a7b2b30ace982",
     "url": "/svg-strokes/index.html"
   },
   {
