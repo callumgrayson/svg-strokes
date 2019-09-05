@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
 
+import V1 from './V1/V1';
+
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const [ version, setVersion ] = useState('1');
+
+	const handleChange = (e) => {
+		setVersion(e.target.value);
+	};
+
+	return (
+		<div className="app">
+			<select className="select" value={version} onChange={handleChange}>
+				<option value="1">version 1</option>
+				<option value="2">version 2</option>
+			</select>
+			{version === '1' && <V1 />}
+			{version === '2' && <div className="v2">V2 will go here...</div>}
+		</div>
+	);
 }
 
 export default App;
