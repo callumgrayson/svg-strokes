@@ -1,5 +1,4 @@
 import React, { useState, useLayoutEffect } from 'react';
-import styled, { css } from 'styled-components';
 import './V2.css';
 
 import AlphaSVG2 from './alphaSVG2';
@@ -8,12 +7,26 @@ const V2 = () => {
 	const [ refresh, setRefresh ] = useState(1);
 
 	useLayoutEffect(() => {
-		const logo2 = document.querySelectorAll('path');
-		// console.log('logo2', logo2);
+		const svgEl = document.querySelectorAll('svg');
+		// console.log('svgEl', svgEl);
+		let paths = {};
 
-		for (let i = 0; i < logo2.length; i++) {
-			console.log(`Letter ${i} is ${logo2[i].getTotalLength()}`);
+		for (let i = 0; i < svgEl.length; i++) {
+			// console.log(
+			// 	'svgEl[i].getAttribute("class")',
+			// 	svgEl[i].getAttribute('class')[3]
+			// );
+			const vb = svgEl[i].getAttribute('viewBox');
+			const letter = svgEl[i].getAttribute('class')[3];
+			const path = svgEl[i].childNodes[0].getAttribute('d');
+			// console.log(`Letter ${i} is ${svgEl[i].getTotalLength()}`);
+			paths[letter] = {
+				viewBox: vb,
+				path: path
+			};
 		}
+
+		console.log('paths', JSON.stringify(paths));
 	});
 
 	const refreshAnimation = () => {
@@ -26,7 +39,7 @@ const V2 = () => {
 				refresh={Boolean(refresh)}
 				height="100"
 				stroke="white"
-				strokeWidth="9"
+				strokeWidth="10"
 			/>
 		);
 	}

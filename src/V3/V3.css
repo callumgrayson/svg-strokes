@@ -1,0 +1,40 @@
+.v3_animate {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: .5rem;
+
+	color: #ccc;
+	background-color: transparent;
+	border: 2px solid #999;
+	padding: .5rem 1rem;
+	border-radius: .2rem;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	letter-spacing: .1rem;
+}
+
+.v3_animate:focus,
+.v3_animate:active {
+	outline: none;
+	border-color: #eee;
+}
+
+.v3_animate:hover {
+	opacity: .7;
+}
+
+.v3_input {
+	position: absolute;
+	top: 0;
+	left: 50vw;
+	transform: translateX(-50%);
+	margin: .5rem;
+
+	color: #666;
+	background-color: #eee;
+	border: 2px solid #999;
+	padding: .5rem 1rem;
+	border-radius: .2rem;
+	font-family: sans-serif;
+	letter-spacing: .1rem;
+}

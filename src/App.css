@@ -21,6 +21,7 @@ body {
 }
 
 .select {
+	box-sizing: border-box;
 	position: absolute;
 	top: .5rem;
 	left: .5rem;
@@ -32,6 +33,11 @@ body {
 	border-radius: .2rem;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 	letter-spacing: .1rem;
+}
+
+.select:focus,
+.select:active {
+	outline: none;
 }
 
 option {

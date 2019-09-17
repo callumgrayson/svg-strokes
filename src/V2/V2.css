@@ -38,46 +38,63 @@
 }
 
 .svgBox div:nth-child(1) {
+	background-color: aqua;
+
 	stroke-dasharray: 1200.5771484375;
 	stroke-dashoffset: 1200.5771484375;
 	animation: line-anim 2s ease forwards;
 }
 .svgBox div:nth-child(2) {
+	background-color: violet;
+
 	stroke-dasharray: 1200.9679870605469;
 	stroke-dashoffset: 1200.9679870605469;
 	animation: line-anim 2s ease forwards .3s;
 }
 .svgBox div:nth-child(3) {
+	background-color: aqua;
+
 	stroke-dasharray: 1200.9131164550781;
 	stroke-dashoffset: 1200.9131164550781;
 	animation: line-anim 2s ease forwards .6s;
 }
 .svgBox div:nth-child(4) {
+	background-color: violet;
+
 	stroke-dasharray: 1400;
 	stroke-dashoffset: 1400;
 	animation: line-anim 2s ease forwards .9s;
 }
 .svgBox div:nth-child(5) {
+	background-color: aqua;
 	stroke-dasharray: 1200;
 	stroke-dashoffset: 1200;
 	animation: line-anim 2s ease forwards 1.2s;
 }
 .svgBox div:nth-child(6) {
+	background-color: violet;
+
 	stroke-dasharray: 900;
 	stroke-dashoffset: 900;
 	animation: line-anim 2s ease forwards 1.5s;
 }
 .svgBox div:nth-child(7) {
+	background-color: aqua;
+
 	stroke-dasharray: 1200;
 	stroke-dashoffset: 1200;
 	animation: line-anim 2s ease forwards 1.8s;
 }
 .svgBox div:nth-child(8) {
+	background-color: violet;
+
 	stroke-dasharray: 1200;
 	stroke-dashoffset: 1200;
 	animation: line-anim 2s ease forwards 1.1s;
 }
 .svgBox div:nth-child(9) {
+	background-color: aqua;
+
 	stroke-dasharray: 600;
 	stroke-dashoffset: 600;
 	animation: line-anim 2s ease forwards 1.4s;
@@ -100,7 +117,7 @@
 .svgBox div:nth-child(13) {
 	stroke-dasharray: 1600;
 	stroke-dashoffset: 1600;
-	animation: line-anim 2s ease forwards 1.6s;
+	animation: line-anim 2s ease forwards .1s;
 }
 .svgBox div:nth-child(14) {
 	stroke-dasharray: 1250;
@@ -150,7 +167,7 @@
 .svgBox div:nth-child(23) {
 	stroke-dasharray: 1550;
 	stroke-dashoffset: 1550;
-	animation: line-anim 2s ease forwards 1.5s;
+	animation: line-anim 2s ease forwards .2s;
 }
 .svgBox div:nth-child(24) {
 	stroke-dasharray: 1240;
