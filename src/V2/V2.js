@@ -1,5 +1,4 @@
 import React, { useState, useLayoutEffect } from 'react';
-import styled, { css } from 'styled-components';
 import './V2.css';
 
 import AlphaSVG2 from './alphaSVG2';

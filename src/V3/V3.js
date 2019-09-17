@@ -1,34 +1,32 @@
 import React, { useState, useLayoutEffect } from 'react';
-import styled, { css } from 'styled-components';
 import './V3.css';
 
 import AlphaSVG from './alphaSVG';
 
 const V3 = () => {
 	const [ refresh, setRefresh ] = useState(1);
+	const [ inputText, setInputText ] = useState('excellent');
+	const [ lengths, setLengths ] = useState({});
 
-	useLayoutEffect(() => {
-		const svgEl = document.querySelectorAll('svg');
-		// console.log('svgEl', svgEl);
-		let paths = {};
+	useLayoutEffect(
+		() => {
+			const svgEl = document.querySelectorAll('svg');
 
-		for (let i = 0; i < svgEl.length; i++) {
-			// console.log(
-			// 	'svgEl[i].getAttribute("class")',
-			// 	svgEl[i].getAttribute('class')[3]
-			// );
-			const vb = svgEl[i].getAttribute('viewBox');
-			const letter = svgEl[i].getAttribute('class')[3];
-			const path = svgEl[i].childNodes[0].getAttribute('d');
-			// console.log(`Letter ${i} is ${svgEl[i].getTotalLength()}`);
-			paths[letter] = {
-				viewBox: vb,
-				path: path
-			};
-		}
+			let lengths = [];
+			for (let i = 0; i < svgEl.length; i++) {
+				const length = svgEl[i].childNodes[0].getTotalLength();
+				lengths.push(length);
+			}
 
-		console.log('paths', JSON.stringify(paths));
-	});
+			setLengths(lengths);
+		},
+		[ inputText ]
+	);
+
+	const changeText = (e) => {
+		let val = e.target.value;
+		setInputText(val);
+	};
 
 	const refreshAnimation = () => {
 		setRefresh((prev) => (prev === 0 ? 1 : 0));
@@ -36,18 +34,28 @@ const V3 = () => {
 
 	function renderSvg() {
 		return (
-			<AlphaSVG2
+			<AlphaSVG
 				refresh={Boolean(refresh)}
 				height="100"
 				stroke="white"
 				strokeWidth="10"
+				letters={inputText}
+				lengths={lengths}
+				refreshAnimation={refreshAnimation}
 			/>
 		);
 	}
 
 	return (
 		<div>
-			<button className="animate2" onClick={refreshAnimation}>
+			<input
+				className="v3_input"
+				type="text"
+				value={inputText}
+				onChange={changeText}
+				placeholder="enter text"
+			/>
+			<button className="v3_animate" onClick={refreshAnimation}>
 				Animate
 			</button>
 			{refresh === 0 && renderSvg()}
