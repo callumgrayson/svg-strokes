@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/svg-strokes/static/css/main.9076b84a.chunk.css",
-    "main.js": "/svg-strokes/static/js/main.5433eb29.chunk.js",
-    "main.js.map": "/svg-strokes/static/js/main.5433eb29.chunk.js.map",
+    "main.css": "/svg-strokes/static/css/main.7ccf9dfa.chunk.css",
+    "main.js": "/svg-strokes/static/js/main.1c7fbba6.chunk.js",
+    "main.js.map": "/svg-strokes/static/js/main.1c7fbba6.chunk.js.map",
     "runtime~main.js": "/svg-strokes/static/js/runtime~main.27a146e3.js",
     "runtime~main.js.map": "/svg-strokes/static/js/runtime~main.27a146e3.js.map",
-    "static/js/2.fac1d766.chunk.js": "/svg-strokes/static/js/2.fac1d766.chunk.js",
-    "static/js/2.fac1d766.chunk.js.map": "/svg-strokes/static/js/2.fac1d766.chunk.js.map",
+    "static/js/2.91f79291.chunk.js": "/svg-strokes/static/js/2.91f79291.chunk.js",
+    "static/js/2.91f79291.chunk.js.map": "/svg-strokes/static/js/2.91f79291.chunk.js.map",
     "index.html": "/svg-strokes/index.html",
-    "precache-manifest.936d8572439d557cd8bafad1b22d0655.js": "/svg-strokes/precache-manifest.936d8572439d557cd8bafad1b22d0655.js",
+    "precache-manifest.d8a5e5766072c12567e028d910e4868c.js": "/svg-strokes/precache-manifest.d8a5e5766072c12567e028d910e4868c.js",
     "service-worker.js": "/svg-strokes/service-worker.js",
-    "static/css/main.9076b84a.chunk.css.map": "/svg-strokes/static/css/main.9076b84a.chunk.css.map"
+    "static/css/main.7ccf9dfa.chunk.css.map": "/svg-strokes/static/css/main.7ccf9dfa.chunk.css.map"
   }
 }
