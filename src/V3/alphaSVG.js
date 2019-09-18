@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 import paths from './paths.json';
-const uuid = require('uuid/v4');
 
 const SvgBox = styled.div`
 	display: flex;
@@ -64,7 +63,6 @@ export default (props) => {
 					const { viewBox, path, char, length } = el;
 					return (
 						<SvgChar
-							key={uuid()}
 							className="v3_svgChar"
 							key={i}
 							length={length}
